@@ -19,7 +19,16 @@ def find_and_plot_similar_players(player_df, player_name, k=5):
     numeric_columns = player_df.select_dtypes(include=['number'])
 
     # Check if you have any missing values and handle them if needed
-    numeric_columns.fillna(0, inplace=True)  # You can replace NaN values with zeros or handle them differently
+    if numeric_columns.isnull().values.any():
+        print("Warning: NaN values found. Filling NaN values with zeros.")
+        numeric_columns.fillna(0, inplace=True)
+
+    # Check for other non-finite values (e.g., Inf)
+    if not np.isfinite(numeric_columns).all().all():
+        print("Warning: Non-finite values found. Handling them as needed.")
+
+        # Handle non-finite values (replace with zeros or another strategy)
+        numeric_columns.replace([np.inf, -np.inf], 0, inplace=True)
 
     # Standardize the data
     scaler = StandardScaler()
