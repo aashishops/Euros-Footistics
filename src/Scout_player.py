@@ -15,6 +15,10 @@ def find_and_plot_similar_players(player_df, player_name, k=5):
     if "Unnamed: 0" in player_df.columns:
         # Drop the "Unnamed: 0" column
         player_df = player_df.drop("Unnamed: 0", axis=1, errors='ignore')
+    # Drop the "90s" column if it exists
+    if "90s" in player_df.columns:
+        player_df = player_df.drop("90s", axis=1, errors='ignore')
+
 
     # Exclude non-numeric columns like player names
     numeric_columns = player_df.select_dtypes(include=['number'])
