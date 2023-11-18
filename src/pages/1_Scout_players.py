@@ -15,7 +15,7 @@ striker_df = pd.read_csv(r"FInal_DF/strikers.csv")
 cb_df = pd.read_csv(r"FInal_DF/cb.csv")
 wi_df = pd.read_csv(r"FInal_DF/wi.csv")
 ps_df = pd.read_csv(r"Web scrapping/Final Data/position.csv")
-ps_df = ps_df[ps_df['your_column_name'] != ['Series([], Name: TmPos, dtype: object)']]
+ps_df = ps_df[ps_df['Position'] != ['Series([], Name: TmPos, dtype: object)']]
 
 player_names = ps_df['Player'].tolist()
 player_name = st.sidebar.selectbox("Select a player:", player_names)
