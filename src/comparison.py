@@ -1,6 +1,6 @@
 import plotly.express as px
 import pandas as pd
-import streamlit as st
+
 
 def single_player_comparison(player_name, ps_df, position_to_df):
     # Search for the player's position in ps_df
@@ -22,7 +22,7 @@ def single_player_comparison(player_name, ps_df, position_to_df):
                
 
                 # Print the DataFrame
-                st.write(player_data)
+              
 
                 player_comp = pd.melt(player_data, id_vars=['Player'], value_vars=player_data.columns[1:], var_name='Stat')
 
@@ -73,7 +73,7 @@ def player_vs_player_comparison(player1_name, player2_name, ps_df, position_to_d
                     player1_data = player1_data.drop(columns=['Position', 'Unnamed: 0','90s'])
                     player2_data = player2_data.drop(columns=['Position', 'Unnamed: 0','90s'])
                     player_data = pd.concat([player1_data, player2_data], ignore_index=True)
-                    st.write(player_data)
+                    
 
                    
                     
