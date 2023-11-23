@@ -51,7 +51,7 @@ abbreviation_dict = position_to_abbrevations.get(player_position, {})
 
 # Perform the rest of your code for single player comparison
 fig = single_player_comparison(player_name, ps_df, position_to_df)
-st.plotly_chart(fig)
+# st.plotly_chart(fig)
 
 # Print the abbreviation dictionary in a readable format
 st.write(f"Abbreviations for {player_position}:\n")
