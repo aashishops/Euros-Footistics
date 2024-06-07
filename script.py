@@ -7,6 +7,7 @@ def generate_csv():
         ["Alice", 30, "New York"],
         ["Bob", 24, "San Francisco"],
         ["Charlie", 29, "Boston"]
+        ["Chaplin", 39, "Koston"]
     ]
 
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')  # Current date and time
