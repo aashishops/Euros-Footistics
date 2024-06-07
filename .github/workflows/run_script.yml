@@ -3,6 +3,7 @@ name: Run Python Script
 on:
   schedule:
     - cron: '*/1 * * * *' # This will run the script every minute
+  workflow_dispatch: # This enables manual trigger
 
 jobs:
   build:
