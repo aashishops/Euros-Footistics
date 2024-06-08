@@ -11,7 +11,7 @@ def generate_csv():
     ]
 
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')  # Current date and time
-    filename = f"data_{timestamp}.csv"  # Use timestamp in the filename
+    filename = f"data.csv"  # Use timestamp in the filename
 
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
