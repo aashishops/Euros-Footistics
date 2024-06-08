@@ -6,7 +6,7 @@ def generate_csv():
         ["Name", "Age", "City"],
         ["Alice", 30, "New York"],
         ["Bob", 24, "San Francisco"],
-        ["Charlie", 29, "Boston"]
+        ["Charlie", 29, "Boston"],
         ["Chaplin", 39, "Koston"]
     ]
 
