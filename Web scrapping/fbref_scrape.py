@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 from datetime import date
 
-path = "E:\github projects\Footistics\Players data"    #path where you want to save
+path = "Players data"    #path where you want to save
 os.chdir(path)
     
 

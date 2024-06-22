@@ -2,7 +2,7 @@ import pandas as pd
 
 player_position_df = pd.read_csv(r'Positions_Mapped.csv')
 
-path = r"E:\github projects\Footistics\Players data\\"
+path = r"Players data\\"
 
 shooting_df = pd.read_csv(path+r"shooting.csv")
 stats_df = pd.read_csv(path+r"stats.csv")

@@ -36,5 +36,5 @@ jobs:
       run: |
         timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
         git add *.csv
-        git commit -m "Add generated CSV file at $timestamp"
+        git commit -m "Scraped from FBREF at $timestamp"
         git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git

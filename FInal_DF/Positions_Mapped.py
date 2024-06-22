@@ -4,7 +4,7 @@ import unicodedata
 import re
 
 # Define the folder path
-folder_path = r'E:\github projects\Footistics\Players data\squad'
+folder_path = r'Players data\squad'
 
 # Initialize lists to store player names and positions
 all_player_names = []
@@ -38,7 +38,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Read the fbref CSV file
-fbref = pd.read_csv(r'E:\github projects\Footistics\Players data\stats.csv')
+fbref = pd.read_csv(r'Players data\stats.csv')
 
 # Normalize text function
 def normalize_text(text):
@@ -68,7 +68,7 @@ matched_info_df = merged_df[['Player', 'Position']]
 
 
 # Save matched info to a CSV file
-matched_info_file = r'E:\github projects\Footistics\FInal_DF\Positions_Mapped.csv'
+matched_info_file = r'FInal_DF\Positions_Mapped.csv'
 matched_info_df.to_csv(matched_info_file, index=False)
 
 print("Players matched and saved successfully.")
