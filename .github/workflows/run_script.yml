@@ -1,12 +1,10 @@
 name: Run Python Script
 
 on:
-  # schedule:
-  #   - cron: '30 16 * * *'  # Runs at 9:30 PM IST (4:00 PM UTC)
-  #   - cron: '30 19 * * *'  # Runs at 12:30 AM IST the next day (7:00 PM UTC)
-  #   - cron: '0 21 * * *'    # Runs at 3:00 AM IST (9:30 PM UTC)
+  schedule:
+    - cron: '30 4 * * *'
     
-  # workflow_dispatch: # This enables manual trigger
+  workflow_dispatch: # This enables manual trigger
 
 jobs:
   build:
