@@ -5,11 +5,11 @@ from comparison import multi_players_comparison
 import plotly.express as px
 
 # Load data
-ps_df = pd.read_csv(r'FInal_DF\Positions_Mapped.csv')
-fw_df = pd.read_csv(r'FInal_DF\df\fw_df.csv')
-mf_df = pd.read_csv(r'FInal_DF\df\mf_df.csv')
-df_df = pd.read_csv(r'FInal_DF\df\df_df.csv')
-gk_df = pd.read_csv(r'FInal_DF\df\gk_df.csv')
+ps_df = pd.read_csv(r'FInal_DF/Positions_Mapped.csv')
+fw_df = pd.read_csv(r'FInal_DF/df/fw_df.csv')
+mf_df = pd.read_csv(r'FInal_DF/df/mf_df.csv')
+df_df = pd.read_csv(r'FInal_DF/df/df_df.csv')
+gk_df = pd.read_csv(r'FInal_DF/df/gk_df.csv')
 
 # Define columns for each position
 fw_df_columns = ['Gls', 'Ast', 'npxG', 'xAG', 'npxG+xAG', 'PrgC',
@@ -45,7 +45,7 @@ position_columns = {
 }
 
 # Load abbreviations
-with open(r'src\abbrevation.json', 'r') as file:
+with open(r'src/abbrevation.json', 'r') as file:
     data = json.load(file)
 # Set Streamlit page configuration
 st.set_page_config(
