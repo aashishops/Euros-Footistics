@@ -1,0 +1,40 @@
+name: Run Python Script
+
+on:
+  # schedule:
+  #   - cron: '30 16 * * *'  # Runs at 9:30 PM IST (4:00 PM UTC)
+  #   - cron: '30 19 * * *'  # Runs at 12:30 AM IST the next day (7:00 PM UTC)
+  #   - cron: '0 21 * * *'    # Runs at 3:00 AM IST (9:30 PM UTC)
+    
+  # workflow_dispatch: # This enables manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Git
+      run: |
+        git config --global user.email "actions@users.noreply.github.com"
+        git config --global user.name "GitHub Actions"
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Run script
+      run: |
+        python script.py
+
+    - name: Commit CSV file
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+        git add *.csv
+        git commit -m "Scraped from FbRef at $timestamp"
+        git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
