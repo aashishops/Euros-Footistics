@@ -10,13 +10,13 @@ st.set_page_config(
     page_icon="⚽",
 )
 
-ps_df = pd.read_csv(r'FInal_DF\Positions_Mapped.csv')
+ps_df = pd.read_csv(r'FInal_DF/Positions_Mapped.csv')
 
 
-fw_df = pd.read_csv(r'FInal_DF\df\fw_df.csv')
-mf_df = pd.read_csv(r'FInal_DF\df\mf_df.csv')
-df_df = pd.read_csv(r'FInal_DF\df\df_df.csv')
-gk_df = pd.read_csv(r'FInal_DF\df\gk_df.csv')
+fw_df = pd.read_csv(r'FInal_DF/df/fw_df.csv')
+mf_df = pd.read_csv(r'FInal_DF/df/mf_df.csv')
+df_df = pd.read_csv(r'FInal_DF/df/df_df.csv')
+gk_df = pd.read_csv(r'FInal_DF/df/gk_df.csv')
 
 fw_df_columns = ['Gls', 'Ast', 'npxG', 'xAG', 'npxG+xAG', 'PrgC',
                  'CrsPA', 'Sh', 'SoT', 'Crs', 'Att', 'Succ',
@@ -50,7 +50,7 @@ position_columns = {
 }
 
 
-with open(r'src\abbrevation.json', 'r') as file:
+with open(r'src/abbrevation.json', 'r') as file:
     data = json.load(file)
 
 st.title("Single Player Comparison")
