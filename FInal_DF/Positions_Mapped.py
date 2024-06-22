@@ -4,7 +4,7 @@ import unicodedata
 import re
 
 # Define the folder path
-folder_path = r'Players data\squad'
+folder_path = r'Players data/squad'
 
 # Initialize lists to store player names and positions
 all_player_names = []
@@ -68,7 +68,7 @@ matched_info_df = merged_df[['Player', 'Position']]
 
 
 # Save matched info to a CSV file
-matched_info_file = r'FInal_DF\Positions_Mapped.csv'
+matched_info_file = r'FInal_DF/Positions_Mapped.csv'
 matched_info_df.to_csv(matched_info_file, index=False)
 
 print("Players matched and saved successfully.")
