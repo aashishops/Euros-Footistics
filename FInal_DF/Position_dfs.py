@@ -2,18 +2,18 @@ import pandas as pd
 
 player_position_df = pd.read_csv(r'Positions_Mapped.csv')
 
-path = r"Players data\\"
+path = r"Players data"
 
-shooting_df = pd.read_csv(path+r"shooting.csv")
-stats_df = pd.read_csv(path+r"stats.csv")
-keepersadv_df = pd.read_csv(path+r"keepersadv.csv")
-possession_df = pd.read_csv(path+r"possession.csv")
-passing_types_df = pd.read_csv(path+r"passing_types.csv")
-passing_df = pd.read_csv(path+r"passing.csv")
-misc_df = pd.read_csv(path+r"misc.csv")
-keepers_df = pd.read_csv(path+r"keepers.csv")
-gca_df = pd.read_csv(path+r"gca.csv")
-defense_df = pd.read_csv(path+r"defense.csv")
+shooting_df = pd.read_csv(path+r"/shooting.csv")
+stats_df = pd.read_csv(path+r"/stats.csv")
+keepersadv_df = pd.read_csv(path+r"/keepersadv.csv")
+possession_df = pd.read_csv(path+r"/possession.csv")
+passing_types_df = pd.read_csv(path+r"/passing_types.csv")
+passing_df = pd.read_csv(path+r"/passing.csv")
+misc_df = pd.read_csv(path+r"/misc.csv")
+keepers_df = pd.read_csv(path+r"/keepers.csv")
+gca_df = pd.read_csv(path+r"/gca.csv")
+defense_df = pd.read_csv(path+r"/defense.csv")
 
 
 # Extracting specific attributes from stats and passing dataframes based on positions
