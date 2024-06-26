@@ -2,37 +2,51 @@ name: Run Python Script
 
 on:
   schedule:
-    - cron: '30 4 * * *'
-    
-  workflow_dispatch: # This enables manual trigger
+    - cron: '30 4 * * *'  # Runs at 4:30 AM UTC (10:00 AM IST)
+
+  workflow_dispatch:  # This enables manual trigger
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Git
-      run: |
-        git config --global user.email "actions@users.noreply.github.com"
-        git config --global user.name "GitHub Actions"
+      - name: Set up Git
+        run: |
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
-    - name: Run script
-      run: |
-        python script.py
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  # Ensure you have a requirements.txt file
 
-    - name: Commit CSV file
-      env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      run: |
-        timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-        git add *.csv
-        git commit -m "Scraped from FBREF at $timestamp"
-        git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
+      - name: Run Web Scrapping script
+        run: |
+          python "Web scrapping/fbref_scrape.py"
+
+
+      - name: Run Position Mapping Script
+        run: |
+          python "FInal_DF/Positions_Mapped.py"
+
+      - name: Run Position Dataframe Script
+        run: |
+          python "FInal_DF/Position_dfs.py"
+
+      - name: Commit CSV files
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          git add *.csv
+          git commit -m "Scraped from FBREF at $timestamp"
+          git push https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git
