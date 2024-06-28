@@ -4,4 +4,4 @@ lxml
 requests
 unicodedata2
 regex
-os-sys
+
