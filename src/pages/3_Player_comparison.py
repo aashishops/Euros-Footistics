@@ -60,8 +60,6 @@ player_names = ps_df["Player"].tolist()
 selected_players = st.sidebar.multiselect("Select players (up to 5):", player_names, [])
 player_position = ps_df.loc[ps_df["Player"] == player_names, "Position"].iloc[0]
 
-selected_df = position_to_df[player_position]
-selected_columns = position_columns[player_position]
 
 if len(selected_players) < 2:
     st.warning("Please select at least 2 players for comparison.")
@@ -69,9 +67,18 @@ else:
     players_positions = ps_df.loc[ps_df["Player"].isin(selected_players), ["Player", "Position"]]
     unique_positions = players_positions["Position"].unique()
 
+    
+
+
     if len(unique_positions) > 1:
         st.warning("Select players of the same position for comparison.")
     else:
+        print("position:")
+        print(unique_positions)
+        unique_positions = unique_positions[0]
+        selected_df = position_to_df[unique_positions]
+        selected_columns = position_columns[unique_positions]
+        print(selected_df)
         selected_df[selected_columns] = selected_df.apply(lambda x: x[selected_columns] * x['90s'] if x['90s'] >= 1 else x[selected_columns], axis=1)
 
         # Get position and corresponding DataFrame
