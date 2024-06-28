@@ -91,10 +91,11 @@ else:
         st.write("Abbreviations:")
         if player_position in data:
                 st.write(f"Abbrevations of Statistics Used:")
-                abbreviations = data[player_position]['abbreviations']
-                full_forms = data[player_position]['full_forms']
+                abbreviations = data[unique_positions]['abbreviations']
+                full_forms = data[unique_positions]['full_forms']
                 
                 for abbreviation in abbreviations:
                     if abbreviation in full_forms:
                         full_form = full_forms[abbreviation]
                         st.write(f"{abbreviation} - {full_form}")
+
