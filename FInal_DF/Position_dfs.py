@@ -97,10 +97,10 @@ print("MF Dataframe:", mf_df)
 print("FW Dataframe:", fw_df)
 
 
-gk_df.to_csv('df/gk_df.csv', index=False)
-df_df.to_csv('df/df_df.csv', index=False)
-mf_df.to_csv('df/mf_df.csv', index=False)
-fw_df.to_csv('df/fw_df.csv', index=False)
+gk_df.to_csv('FInal_DF/df/df_df.csv', index=False)
+df_df.to_csv('FInal_DF/df/df_df.csv', index=False)
+mf_df.to_csv('FInal_DF/df/mf_df.csv', index=False)
+fw_df.to_csv('FInal_DF/df/fw_df.csv', index=False)
 
 
 
