@@ -1,7 +1,7 @@
 import pandas as pd
 path = r"Players data"
 
-player_position_df = pd.read_csv(r'FInal_DF/Position_dfs.csv')
+player_position_df = pd.read_csv('FInal_DF/Position_dfs.csv')
 
 
 
