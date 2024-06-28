@@ -54,6 +54,7 @@ def multi_players_comparison(df, player_names):
     df_melted = players_data_normalized.melt(id_vars=['Player'], var_name='Stat', value_name='Value')
     df_melted = df_melted[df_melted['Stat'] != '90s']
     df_melted['Value'] = df_melted['Value'].clip(lower=0, upper=1)
+    print(df_melted)
 
     # Create radar chart
     fig = px.line_polar(df_melted, r='Value', theta='Stat', line_close=True, color='Player',
