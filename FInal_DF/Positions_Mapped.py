@@ -38,7 +38,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Read the fbref CSV file
-fbref = pd.read_csv(r'Players data\stats.csv')
+fbref = pd.read_csv(r'Players data/stats.csv')
 
 # Normalize text function
 def normalize_text(text):
