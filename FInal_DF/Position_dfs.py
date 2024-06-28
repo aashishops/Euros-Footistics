@@ -1,8 +1,9 @@
 import pandas as pd
-
-player_position_df = pd.read_csv(r'Positions_Mapped.csv')
-
 path = r"Players data"
+
+player_position_df = pd.read_csv(path+r'Positions_Mapped.csv')
+
+
 
 shooting_df = pd.read_csv(path+r"/shooting.csv")
 stats_df = pd.read_csv(path+r"/stats.csv")
