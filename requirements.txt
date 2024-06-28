@@ -1,3 +1,7 @@
 beautifulsoup4
 pandas
 lxml
+requests
+unicodedata2
+regex
+os-sys

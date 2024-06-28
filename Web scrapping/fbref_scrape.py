@@ -1,9 +1,8 @@
 #importing the necessary modules
 import os
-import numpy as np
 import pandas as pd
 import requests
-import seaborn as sns
+
 from bs4 import BeautifulSoup 
 
 
