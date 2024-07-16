@@ -37,7 +37,7 @@
 36,36,Altay Bayındır,GK,tr Türkiye,25,1998,1.0,35,31,4,2,0,0,0,0,0,0,0,0,29,0,0,Matches
 37,37,Jan Bednarek,DF,pl Poland,27,1996,3.0,101,86,14,7,0,1,0,7,0,0,0,0,89,1,0,Matches
 38,38,Maximilian Beier,FW,de Germany,21,2002,0.3,7,7,0,0,0,0,1,0,0,0,0,0,3,0,2,Matches
-39,39,Jude Bellingham,"MF,FW",eng England,20,2003,7.4,363,356,6,3,2,3,8,3,0,0,0,0,311,1,8,Matches
+39,39,Jude Bellingham,"MF,FW",eng England,20,2003,7.4,363,356,6,3,3,3,8,3,0,0,0,0,311,1,8,Matches
 40,40,László Bénes,MF,sk Slovakia,26,1997,0.8,52,47,5,2,1,1,6,0,3,2,1,0,41,0,1,Matches
 41,41,Bartosz Bereszyński,DF,pl Poland,31,1992,0.1,2,2,0,0,0,0,1,0,0,0,0,0,1,0,1,Matches
 42,42,Steven Bergwijn,FW,nl Netherlands,26,1997,1.0,49,49,0,0,0,0,2,0,0,0,0,0,40,0,2,Matches
@@ -347,7 +347,7 @@
 358,346,David Raya,GK,es Spain,28,1995,1.0,42,34,7,2,0,1,0,0,0,0,0,0,36,1,0,Matches
 359,347,Tijjani Reijnders,MF,nl Netherlands,25,1998,5.5,265,261,3,2,3,1,1,0,0,0,0,0,246,1,3,Matches
 360,348,Mateo Retegui,FW,it Italy,24,1999,1.7,19,18,1,0,1,0,0,0,0,0,0,0,10,0,0,Matches
-361,349,Declan Rice,MF,eng England,25,1999,7.7,530,516,12,11,1,5,7,1,0,0,0,0,484,2,5,Matches
+361,349,Declan Rice,MF,eng England,25,1999,7.7,530,516,12,11,1,5,7,1,0,0,0,0,484,2,6,Matches
 362,350,Fabian Rieder,MF,ch Switzerland,21,2002,2.4,89,78,10,2,2,0,14,1,7,7,0,0,62,1,1,Matches
 364,351,Andrew Robertson,DF,sct Scotland,29,1994,3.0,120,90,30,13,0,0,13,16,1,1,0,0,91,0,5,Matches
 365,352,Rodri,MF,es Spain,27,1996,5.8,439,430,7,6,0,4,0,1,0,0,0,0,408,2,1,Matches
@@ -406,7 +406,7 @@
 420,405,Taras Stepanenko,MF,ua Ukraine,34,1989,0.9,74,73,1,1,0,0,1,0,0,0,0,0,63,0,0,Matches
 421,406,Leonidas Stergiou,DF,ch Switzerland,21,2002,0.5,11,8,3,0,0,0,0,3,0,0,0,0,6,0,1,Matches
 422,407,Petar Stojanović,MF,si Slovenia,28,1995,3.5,107,99,7,2,0,1,1,5,0,0,0,0,78,1,5,Matches
-423,408,John Stones,DF,eng England,29,1994,7.7,559,548,11,10,0,8,0,0,0,0,0,0,525,0,2,Matches
+423,408,John Stones,DF,eng England,29,1994,7.7,559,548,11,10,1,8,0,0,0,0,0,0,525,0,2,Matches
 424,409,Thomas Strakosha,GK,al Albania,28,1995,3.0,93,57,35,5,0,0,0,0,0,0,0,0,65,1,0,Matches
 425,410,Dávid Strelec,FW,sk Slovakia,22,2001,2.0,42,38,4,0,2,0,0,0,0,0,0,0,27,0,1,Matches
 426,411,Callum Styles,MF,hu Hungary,23,2000,0.7,27,25,2,2,1,0,0,0,0,0,0,0,21,0,0,Matches
@@ -430,7 +430,7 @@
 445,429,Marcus Thuram,FW,fr France,26,1997,2.9,53,50,3,0,1,0,0,0,0,0,0,0,45,0,1,Matches
 446,430,Youri Tielemans,MF,be Belgium,26,1997,1.6,112,108,4,2,0,1,3,1,0,0,0,0,96,0,3,Matches
 447,431,Kieran Tierney,DF,sct Scotland,26,1997,1.5,92,80,12,4,0,0,2,6,0,0,0,0,69,0,5,Matches
-448,432,Ivan Toney,"FW,MF",eng England,27,1996,0.5,15,15,0,0,0,0,0,0,0,0,0,0,8,0,0,Matches
+448,432,Ivan Toney,FW,eng England,27,1996,0.5,15,15,0,0,0,0,0,0,0,0,0,0,8,0,0,Matches
 449,433,Ferrán Torres,"FW,MF",es Spain,23,2000,1.7,46,40,6,1,1,1,8,1,4,1,1,0,34,0,2,Matches
 450,434,Cenk Tosun,FW,tr Türkiye,32,1991,0.3,4,4,0,0,0,0,0,0,0,0,0,0,2,0,0,Matches
 451,435,Gernot Trauner,DF,at Austria,31,1992,1.0,78,74,4,1,0,0,0,1,0,0,0,0,74,0,1,Matches

@@ -325,7 +325,7 @@
 335,324,Ivan Perišić,"DF,FW",hr Croatia,34,1989,1.5,0,0,0,0,0,0,0,,0,1,0,1,1,1,3,0,Matches
 336,325,Bruno Petković,FW,hr Croatia,29,1994,1.0,0,0,0,0,0,0,1,0.0,1,0,0,0,0,0,1,0,Matches
 338,326,Krzysztof Piątek,FW,pl Poland,28,1995,0.7,1,1,0,1,0,0,0,,0,0,0,0,0,1,0,0,Matches
-339,327,Jordan Pickford,GK,eng England,29,1994,7.7,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches
+339,327,Jordan Pickford,GK,eng England,29,1994,7.7,0,0,0,0,0,0,0,,0,0,0,0,1,1,1,0,Matches
 340,328,Jakub Piotrowski,MF,pl Poland,26,1997,0.6,0,0,0,0,0,0,0,,0,0,0,0,0,0,1,0,Matches
 341,329,Marin Pongračić,DF,hr Croatia,26,1997,2.0,2,1,2,0,0,0,4,0.0,4,6,3,3,2,4,9,0,Matches
 342,330,Ryan Porteous,DF,sct Scotland,24,1999,0.5,2,1,2,0,0,2,2,100.0,0,0,0,0,0,2,1,0,Matches
@@ -350,12 +350,12 @@
 361,349,Declan Rice,MF,eng England,25,1999,7.7,19,15,11,6,2,5,8,62.5,3,5,1,4,8,27,10,0,Matches
 362,350,Fabian Rieder,MF,ch Switzerland,21,2002,2.4,7,3,1,4,2,3,5,60.0,2,2,1,1,0,7,1,0,Matches
 364,351,Andrew Robertson,DF,sct Scotland,29,1994,3.0,8,5,4,4,0,8,10,80.0,2,2,0,2,1,9,10,1,Matches
-365,352,Rodri,MF,es Spain,27,1996,5.8,13,7,4,8,1,4,9,44.4,5,7,4,3,1,14,10,0,Matches
+365,352,Rodri,MF,es Spain,27,1996,5.8,14,8,4,9,1,4,10,40.0,6,7,4,3,1,15,10,0,Matches
 366,353,Ricardo Rodríguez,DF,ch Switzerland,31,1992,5.3,7,6,2,3,2,3,4,75.0,1,5,2,3,3,10,19,0,Matches
 367,354,Taras Romanchuk,MF,pl Poland,32,1991,0.6,2,1,2,0,0,1,2,50.0,1,1,0,1,0,2,1,0,Matches
 368,355,Cristiano Ronaldo,FW,pt Portugal,38,1985,5.4,1,1,0,0,1,1,1,100.0,0,1,1,0,0,1,1,0,Matches
 369,356,Antonio Rüdiger,DF,de Germany,30,1993,5.3,8,4,7,1,0,6,6,100.0,0,10,6,4,2,10,20,0,Matches
-370,357,Fabián Ruiz Peña,MF,es Spain,27,1996,6.0,9,6,5,0,4,6,10,60.0,4,2,0,2,5,14,5,1,Matches
+370,357,Fabián Ruiz Peña,MF,es Spain,27,1996,6.0,9,6,5,0,4,6,10,60.0,4,3,0,3,4,13,5,1,Matches
 371,358,Adrian Rus,MF,ro Romania,27,1996,0.2,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches
 372,359,Marcel Sabitzer,"FW,MF",at Austria,29,1994,4.0,2,1,0,1,1,2,2,100.0,0,2,0,2,3,5,1,0,Matches
 373,360,Bukayo Saka,"FW,DF",eng England,22,2001,7.0,5,4,2,3,0,2,3,66.7,1,7,0,7,1,6,12,0,Matches
@@ -430,7 +430,7 @@
 445,429,Marcus Thuram,FW,fr France,26,1997,2.9,2,2,0,0,2,0,0,,0,6,2,4,0,2,2,0,Matches
 446,430,Youri Tielemans,MF,be Belgium,26,1997,1.6,2,2,1,1,0,0,1,0.0,1,3,1,2,1,3,0,0,Matches
 447,431,Kieran Tierney,DF,sct Scotland,26,1997,1.5,2,1,2,0,0,1,3,33.3,2,1,1,0,0,2,4,0,Matches
-448,432,Ivan Toney,"FW,MF",eng England,27,1996,0.5,1,1,0,1,0,0,0,,0,0,0,0,0,1,1,0,Matches
+448,432,Ivan Toney,FW,eng England,27,1996,0.5,1,1,0,1,0,0,0,,0,0,0,0,0,1,1,0,Matches
 449,433,Ferrán Torres,"FW,MF",es Spain,23,2000,1.7,0,0,0,0,0,0,1,0.0,1,3,0,3,1,1,1,0,Matches
 450,434,Cenk Tosun,FW,tr Türkiye,32,1991,0.3,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches
 451,435,Gernot Trauner,DF,at Austria,31,1992,1.0,2,1,2,0,0,0,1,0.0,1,2,2,0,1,3,1,0,Matches
@@ -461,7 +461,7 @@
 477,460,Daniel Vivian,DF,es Spain,24,1999,1.4,2,2,2,0,0,2,3,66.7,1,1,1,0,1,3,10,0,Matches
 478,461,Dušan Vlahović,"MF,FW",rs Serbia,24,2000,2.0,0,0,0,0,0,0,1,0.0,1,0,0,0,1,1,0,0,Matches
 479,462,Stefan de Vrij,DF,nl Netherlands,31,1992,6.0,12,7,7,4,1,8,10,80.0,2,6,2,4,2,14,20,0,Matches
-480,463,Kyle Walker,DF,eng England,33,1990,7.7,7,4,3,3,1,4,6,66.7,2,7,1,6,6,13,7,0,Matches
+480,463,Kyle Walker,DF,eng England,33,1990,7.7,7,4,3,3,1,4,7,57.1,3,7,1,6,6,13,7,0,Matches
 481,464,Ollie Watkins,FW,eng England,28,1995,0.7,0,0,0,0,0,0,0,,0,0,0,0,1,1,0,0,Matches
 482,465,Wout Weghorst,FW,nl Netherlands,31,1992,1.5,2,1,1,1,0,1,1,100.0,0,2,1,1,0,2,2,0,Matches
 483,466,Andreas Weimann,FW,at Austria,32,1991,0.0,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,Matches
