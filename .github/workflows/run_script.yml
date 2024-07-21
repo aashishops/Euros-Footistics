@@ -1,69 +1,69 @@
-name: Run Python Scripts and Commit Results
+# name: Run Python Scripts and Commit Results
 
-on:
-  schedule:
-    - cron: '30 4 * * *'  # Runs at 4:30 AM UTC (10:00 AM IST)
+# on:
+#   schedule:
+#     - cron: '30 4 * * *'  # Runs at 4:30 AM UTC (10:00 AM IST)
 
-  workflow_dispatch:  # This enables manual trigger
+#   workflow_dispatch:  # This enables manual trigger
 
-jobs:
-  run_scripts:
-    runs-on: ubuntu-latest
+# jobs:
+#   run_scripts:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
 
-      - name: Set up Git
-        run: |
-          git config --global user.email "actions@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
+#       - name: Set up Git
+#         run: |
+#           git config --global user.email "actions@users.noreply.github.com"
+#           git config --global user.name "GitHub Actions"
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
+#       - name: Set up Python
+#         uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.x'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+#       - name: Install dependencies
+#         run: |
+#           python -m pip install --upgrade pip
+#           pip install -r requirements.txt
 
-      - name: Run Web Scraping script
-        run: |
-          python "Web scrapping/fbref_scrape.py"
-          git_status=$(git status --porcelain)
-          if [ -n "$git_status" ]; then
-            timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            git add *.csv
-            git commit -m "Web scraping: Scraped from FBREF at $timestamp"
-            git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
-          else
-            echo "No changes to commit."
-          fi
+#       - name: Run Web Scraping script
+#         run: |
+#           python "Web scrapping/fbref_scrape.py"
+#           git_status=$(git status --porcelain)
+#           if [ -n "$git_status" ]; then
+#             timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+#             git add *.csv
+#             git commit -m "Web scraping: Scraped from FBREF at $timestamp"
+#             git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+#           else
+#             echo "No changes to commit."
+#           fi
 
-      - name: Run Position Mapping Script
-        run: |
-          python "FInal_DF/Positions_Mapped.py"
-          git_status=$(git status --porcelain)
-          if [ -n "$git_status" ]; then
-            timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            git add *.csv
-            git commit -m "Position mapping: Scraped from FBREF at $timestamp"
-            git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
-          else
-            echo "No changes to commit."
-          fi
+#       - name: Run Position Mapping Script
+#         run: |
+#           python "FInal_DF/Positions_Mapped.py"
+#           git_status=$(git status --porcelain)
+#           if [ -n "$git_status" ]; then
+#             timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+#             git add *.csv
+#             git commit -m "Position mapping: Scraped from FBREF at $timestamp"
+#             git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+#           else
+#             echo "No changes to commit."
+#           fi
 
-      - name: Run Position Dataframe Script
-        run: |
-          python "FInal_DF/Position_dfs.py"
-          git_status=$(git status --porcelain)
-          if [ -n "$git_status" ]; then
-            timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            git add *.csv
-            git commit -m "Position dataframe: Scraped from FBREF at $timestamp"
-            git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
-          else
-            echo "No changes to commit."
-          fi
+#       - name: Run Position Dataframe Script
+#         run: |
+#           python "FInal_DF/Position_dfs.py"
+#           git_status=$(git status --porcelain)
+#           if [ -n "$git_status" ]; then
+#             timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+#             git add *.csv
+#             git commit -m "Position dataframe: Scraped from FBREF at $timestamp"
+#             git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+#           else
+#             echo "No changes to commit."
+#           fi
